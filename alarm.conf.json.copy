@@ -1,0 +1,56 @@
+
+{
+	"Alarmdetails":[
+		{
+		"AlarmDay": "0",
+		"AlarmDayEnabled": "True",
+		"AlarmTime":"06:38",
+		"AlarmMethod":"MPD",
+		"AlarmMethodValue":"vanalles"
+		},
+                {
+                "AlarmDay": "1",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"22:42",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                },
+                {
+                "AlarmDay": "2",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"06:38",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                },
+                {
+                "AlarmDay": "3",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"06:38",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                },
+                {
+                "AlarmDay": "4",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"06:38",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                },
+                {
+                "AlarmDay": "5",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"06:38",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                },
+                {
+                "AlarmDay": "6",
+                "AlarmDayEnabled": "True",
+                "AlarmTime":"06:38",
+                "AlarmMethod":"MPD",
+                "AlarmMethodValue":"vanalles"
+                }
+
+	]
+}
+
