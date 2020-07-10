@@ -1,6 +1,7 @@
 
 #!/bin/bash
 today="`date +%Y-%m-%d`"
+echo $today
 grep -qF "$today" /home/pi/scripts/alarmholiday.txt && exit
 
 todayshort="`date +%m-%d`"
@@ -8,12 +9,12 @@ grep -qF "$todayshort" /home/pi/scripts/alarmholiday.txt && exit
 
 
 mpc clear
-if [ $1 == "MPDPlaylist" ]
+if [ $1 = "MPDPlaylist" ]
 then
 	mpc load $2
 	mpc shuffle
 fi
-if [ $1 == "MPDUrl" ]
+if [ $1 = "MPDUrl" ]
 then
 	mpc add $2
 fi

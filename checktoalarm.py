@@ -21,9 +21,9 @@ while True:
 		todaysalarmtime = todaysalarmdetails['AlarmTime']
 		#print (todaysalarmtime)
 		if (current_time == todaysalarmtime):
-			#print("alarm")
-			#print(todaysalarmdetails['AlarmMethod'])
-			#print(todaysalarmdetails['AlarmMethodValue'])
+			print("alarm")
+			print(todaysalarmdetails['AlarmMethod'])
+			print(todaysalarmdetails['AlarmMethodValue'])
                         process = subprocess.Popen(['sh', '/var/www/html/alarmclock/goalarm.sh',todaysalarmdetails['AlarmMethod'], todaysalarmdetails['AlarmMethodValue']],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 			break
 		#else :
