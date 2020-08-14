@@ -4,10 +4,10 @@ Functionality to make a raspberry behave as alarmclock
 
 ## Prerequisites
 
-MPD MPC with at least 1 playlist
-inputbuttons for pausing/stopping
-screen to display time
-webserver
+MPD MPC with at least 1 playlist 
+inputbuttons for pausing/stopping 
+screen to display time 
+webserver 
 
 ## Installation
 
