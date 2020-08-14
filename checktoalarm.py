@@ -3,6 +3,8 @@ from datetime import datetime
 import time
 import json
 import subprocess
+import os
+
 
 while True:
 	now = datetime.now()
@@ -22,6 +24,8 @@ while True:
 		#print (todaysalarmtime)
 		if (current_time == todaysalarmtime):
 			print("alarm")
+                        if (os.path.exists('/var/www/html/alarmclock/birthday.txt')):
+                           tts = subprocess.call(['python','/var/www/html/alarmclock/alarmclockbdcheck.py'])
 			print(todaysalarmdetails['AlarmMethod'])
 			print(todaysalarmdetails['AlarmMethodValue'])
                         process = subprocess.call(['sh', '/var/www/html/alarmclock/goalarm.sh',todaysalarmdetails['AlarmMethod'], todaysalarmdetails['AlarmMethodValue']],stdout=subprocess.PIPE,stderr=subprocess.PIPE)

@@ -198,6 +198,21 @@ $alarmdetails = json_decode($data,true); // decode the JSON feed
       <hr />
         <button class="btn btn-large btn-primary" type="submit" name="btn-update">Update</button>
       <hr />
+      <table><tr><td>
+      <?php 
+
+      //include('/var/www/html/alarmclock/PHP-MPD/mpd.class.php');
+      //$mpd = new MPD('192.168.2.22', 6600);
+      //if ($mpd === true) {
+      //  echo "hi"; // connection successful
+      //} else {
+      //   echo $mpd->get_error();
+      //}
+      $command = escapeshellcmd(' /var/www/html/alarmclock/getmpdplaylists.py ');
+      echo shell_exec($command);
+      //print_r($output);
+      ?>
+      </td></tr></table>
 
        </div>
 
@@ -210,4 +225,3 @@ $alarmdetails = json_decode($data,true); // decode the JSON feed
     </body>
 
 </html>
-
